@@ -15,10 +15,13 @@ public class FlowLayoutCalc extends JFrame {
     public FlowLayoutCalc() {
         super("Calculadora FlowLayout");
         this.setBounds(300, 300, 300, 300);
-        this.setDefaultCloseOperation(EXIT_ON_CLOSE);
-        FlowLayout flow = new FlowLayout(FlowLayout.CENTER); //
-        this.setLayout(flow);
-        this.add(new JTextField("teste", 15));
+        this.setDefaultCloseOperation(EXIT_ON_CLOSE); 
+        BorderLayout border = new BorderLayout(); 
+        FlowLayout flow = new FlowLayout(FlowLayout.CENTER); 
+        this.setLayout(flow); 
+     
+        this.add(new JTextField("teste", 15)); 
+
         JLabel texto1 = new JLabel("Calculadora Simples");
         JPanel painel1 = new JPanel();
         this.add(painel1);
